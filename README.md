@@ -11,7 +11,7 @@ brew install --cask flutter-vita/tap/flutter-vita
 ```
 
 The cask works from release `3.47.7-vita.1.0.2`. It installs on a Mac with
-Apple silicon, and it installs `cmake` and Python if you do not have them.
+Apple silicon, and it installs `cmake` if you do not have it.
 
 You must also install VitaSDK, because Homebrew does not have it. Install it
 from [vitasdk.org](https://vitasdk.org), set `VITASDK`, and put
