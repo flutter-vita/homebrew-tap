@@ -1,6 +1,6 @@
 cask "flutter-vita" do
-  version "3.47.7-vita.1.0.2"
-  sha256 "8b6dc9e1b76b0963042275b74eea8ae578799a57d60a9a3d9695b3b6b4a8abc0"
+  version "3.47.7-vita.1.0.3"
+  sha256 "970098dec160ce2c745641da1ad00f316e147303b1180dce5b1e3ecc19be5648"
 
   url "https://github.com/flutter-vita/flutter-vita/releases/download/#{version}/flutter-vita-#{version}.tar.gz"
   name "flutter-vita"
@@ -9,7 +9,6 @@ cask "flutter-vita" do
 
   depends_on arch: :arm64
   depends_on formula: "cmake"
-  depends_on formula: "python@3.15"
 
   # The whole tree, submodules included: the launcher and every build run the
   # scripts in tools/. Without .git the tool writes into ~/.flutter-vita.
