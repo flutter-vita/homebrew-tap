@@ -1,6 +1,6 @@
 cask "flutter-vita" do
-  version "3.47.7-vita.1.0.4"
-  sha256 "2cb63b3078ebf18ab398f7ba992ca6d05cd1864fd1643f3781cf684317945576"
+  version "3.47.7-vita.1.0.5"
+  sha256 "650df56118cc46418ed26465cc6b128af4405254d35111b50081f1f3423ac49c"
 
   url "https://github.com/flutter-vita/flutter-vita/releases/download/#{version}/flutter-vita-#{version}.tar.gz"
   name "flutter-vita"
