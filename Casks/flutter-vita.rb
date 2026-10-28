@@ -15,11 +15,11 @@ cask "flutter-vita" do
   binary "flutter-vita/cli/flutter-vita"
 
   caveats <<~EOS
-    flutter-vita also needs VitaSDK, which Homebrew does not have.
-    Install it from https://vitasdk.org, then set VITASDK and put
-    $VITASDK/bin on your PATH. `flutter-vita doctor` checks the setup.
-
     The first command downloads Flutter #{version.split("-").first} for the tool's own use
     (2.1 GB) into ~/.flutter-vita. It does not touch your own Flutter.
+
+    The first `flutter-vita doctor` or `flutter-vita build` also installs
+    VitaSDK (about 100 MB) into ~/.flutter-vita, unless it finds one in
+    VITASDK, ~/vitasdk or /usr/local/vitasdk.
   EOS
 end

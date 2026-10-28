@@ -13,9 +13,11 @@ brew install --cask flutter-vita/tap/flutter-vita
 The cask works from release `3.47.7-vita.1.0.2`. It installs on a Mac with
 Apple silicon, and it installs `cmake` if you do not have it.
 
-You must also install VitaSDK, because Homebrew does not have it. Install it
-from [vitasdk.org](https://vitasdk.org), set `VITASDK`, and put
-`$VITASDK/bin` on your `PATH`. Then check the setup:
+Homebrew does not have VitaSDK, so the tool installs it. The first
+`flutter-vita doctor` or `flutter-vita build` downloads it (about 100 MB) into
+`~/.flutter-vita`. If you have VitaSDK already, in `VITASDK`, `~/vitasdk` or
+`/usr/local/vitasdk`, the tool uses that one. Since release
+`3.47.7-vita.1.0.5`. Check the setup:
 
 ```sh
 flutter-vita doctor
@@ -33,7 +35,8 @@ brew upgrade --cask flutter-vita
 brew uninstall --cask flutter-vita
 ```
 
-The tool keeps the engine and the Flutter SDK in `~/.flutter-vita`. Remove
+The tool keeps the engine, the Flutter SDK and the VitaSDK it installed in
+`~/.flutter-vita`. Remove
 that folder too if you do not use flutter-vita again.
 
 ## How the cask changes
